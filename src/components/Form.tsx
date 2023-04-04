@@ -12,7 +12,9 @@ const Form: FC<Props> = ({ setData }) => {
   const clickHandler = async (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
       const { data } = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${process.env.OWM_API}&units=metric`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${
+          import.meta.env.VITE_OWM_API
+        }&units=metric`,
       );
       setData(data);
       setLocation('');
