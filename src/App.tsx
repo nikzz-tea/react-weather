@@ -12,7 +12,7 @@ function App() {
       <Background />
       <div
         className="backdrop-blur-md backdrop-brightness-90 
-      border-2 border-[#00000005] w-[40%] h-[80vh] my-16 mx-auto 
+      border-2 border-[#00000005] max-w-[700px] h-[80vh] my-16 mx-auto 
       rounded-xl flex items-center flex-col">
         <Form setData={setData} />
         {data ? <Weather {...data} /> : null}

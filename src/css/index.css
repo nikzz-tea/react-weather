@@ -4,6 +4,6 @@
 @tailwind utilities;
 
 body {
-  color: #eeeeee;
+  @apply text-slate-100 px-5;
   font-family: 'Montserrat', sans-serif;
 }
